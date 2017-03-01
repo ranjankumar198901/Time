@@ -3,6 +3,12 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+      <class name="Script.VerifVversion">
+        <methods>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Script.VerifVversion -->
       <class name="Script.VerifyLoginPage">
         <methods>
           <include name="TestVerifyLoginPage"/>
@@ -10,6 +16,20 @@
           <include name="precondition"/>
         </methods>
       </class> <!-- Script.VerifyLoginPage -->
+      <class name="Script.verifyInvalidLogin">
+        <methods>
+          <include name="postcondition"/>
+          <include name="testverifyInvalidLogin"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Script.verifyInvalidLogin -->
+      <class name="Script.verifyloginlogout">
+        <methods>
+          <include name="postcondition"/>
+          <include name="testverifyloginlogout"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Script.verifyloginlogout -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

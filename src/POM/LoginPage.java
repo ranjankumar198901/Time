@@ -60,7 +60,7 @@ public class LoginPage extends BasePage
 		Assert.assertEquals(aVersion,eVersion);
 	}
 	
-	public void errisPresent()
+	public void verifyerrisPresent()
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		try

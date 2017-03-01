@@ -12,7 +12,8 @@ public class VerifyLoginPage extends BaseTest
 	{
 		//verify the login page is displayed or not 
 		LoginPage l= new LoginPage(driver);
-				l.verifyTitle("actiTime - Login");
+		
+		l.verifyTitle("actiTIME - Login");
 	}
 
 }
