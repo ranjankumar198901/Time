@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
+
 public abstract class BasePage
 {
 	public WebDriver driver;
@@ -26,7 +27,7 @@ public abstract class BasePage
 			wait.until(ExpectedConditions.titleIs(etitle));
 			Reporter.log("Title is  matching",true);
 		}
-		catch(Exception e)
+		catch(Exception e)    //timeoutexception 
 		{
 			Reporter.log("Title is not matching",true);
 			Assert.fail();
